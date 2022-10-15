@@ -25,4 +25,4 @@ def verificaCapitulo(link, n):
         titulo = titles[0][0]
         cur.execute(f"UPDATE capitulo SET cap = '{chapter}' WHERE id={n};")
         conn.commit()
-        print(titulo)
+        print(titulo ,":", chapter)
